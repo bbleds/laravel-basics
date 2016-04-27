@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// an example of a url parameter
+Route::get("/hello/{name}", function($name){
+  echo "Hello there " . $name;
+});
